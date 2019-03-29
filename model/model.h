@@ -148,6 +148,7 @@ public:
 	};
 	void RUN(double t, double dt) {
 		outfile << t << "\t" << this->in[0] << endl;
+		cout << t << '\t' << this->in[0] << endl;
 		MODEL::RUN(t, dt);
 	};
 };
